@@ -3,7 +3,7 @@
 *.dll
 *.so
 *.dylib
-server
+# server
 gateway
 
 # Test binary
