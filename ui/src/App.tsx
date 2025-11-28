@@ -1,14 +1,18 @@
-
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link, Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import PatientDetail from './pages/PatientDetail';
 import PatientList from './pages/PatientList';
 import PatientRegistrationForm from './pages/PatientRegistrationForm';
-import PatientDetail from './pages/PatientDetail';
 
 import AppointmentsPage from './pages/AppointmentsPage';
-import LabOrdersPage from './pages/LabOrdersPage';
 import InpatientManagement from './pages/InpatientManagement';
-import ReportsDashboard from './pages/ReportsDashboard';
+import LabOrdersPage from './pages/LabOrdersPage';
 import PharmacyDashboard from './pages/PharmacyDashboard';
+import ReportsDashboard from './pages/ReportsDashboard';
+
+import BillingDashboard from './pages/BillingDashboard';
+import ClaimManagement from './pages/ClaimManagement';
+import InvoiceManagement from './pages/InvoiceManagement';
+import PaymentEntry from './pages/PaymentEntry';
 
 function App() {
   return (
@@ -20,7 +24,9 @@ function App() {
             <div className="flex justify-between h-16">
               <div className="flex">
                 <div className="flex-shrink-0 flex items-center">
-                  <span className="text-xl font-bold text-blue-600">Zarish HIS Module</span>
+                  <span className="text-xl font-bold text-blue-600">
+                    Zarish HIS Module
+                  </span>
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   <Link
@@ -59,6 +65,12 @@ function App() {
                   >
                     Pharmacy
                   </Link>
+                  <Link
+                    to="/billing"
+                    className="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                  >
+                    Billing
+                  </Link>
                 </div>
               </div>
               <div className="flex items-center">
@@ -80,8 +92,27 @@ function App() {
             <Route path="/appointments" element={<AppointmentsPage />} />
             <Route path="/labs" element={<LabOrdersPage />} />
             <Route path="/inpatient" element={<InpatientManagement />} />
-            <Route path="/reports" element={<ReportsDashboard />} />
             <Route path="/pharmacy" element={<PharmacyDashboard />} />
+
+            {/* Billing Routes */}
+            <Route path="/billing" element={<BillingDashboard />} />
+            <Route path="/billing/invoices" element={<BillingDashboard />} />
+            <Route
+              path="/billing/invoices/new"
+              element={<InvoiceManagement />}
+            />
+            <Route
+              path="/billing/invoices/:id"
+              element={<InvoiceManagement />}
+            />
+            <Route
+              path="/billing/invoices/:invoiceId/pay"
+              element={<PaymentEntry />}
+            />
+            <Route path="/billing/claims" element={<ClaimManagement />} />
+            <Route path="/billing/claims/new" element={<ClaimManagement />} />
+
+            <Route path="/reports" element={<ReportsDashboard />} />
           </Routes>
         </main>
       </div>
