@@ -5,8 +5,8 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-	"zarish-his/backend/internal/models"
-	"zarish-his/backend/internal/service"
+	"github.com/code-and-brain/zarish-his-1/backend/internal/models"
+	"github.com/code-and-brain/zarish-his-1/backend/internal/service"
 )
 
 type LabHandler struct {

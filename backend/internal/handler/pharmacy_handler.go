@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/zarishsphere/zarish-his/internal/models"
-	"github.com/zarishsphere/zarish-his/internal/service"
+	"github.com/code-and-brain/zarish-his-1/backend/internal/models"
+	"github.com/code-and-brain/zarish-his-1/backend/internal/service"
 )
 
 type PharmacyHandler struct {
