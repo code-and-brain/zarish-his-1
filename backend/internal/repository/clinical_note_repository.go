@@ -3,7 +3,7 @@ package repository
 import (
 	"errors"
 
-	"github.com/zarishsphere/zarish-his/internal/models"
+	"github.com/ZarishSphere-Platform/zarish-his/internal/models"
 	"gorm.io/gorm"
 )
 

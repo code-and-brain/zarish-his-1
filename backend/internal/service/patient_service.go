@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/zarishsphere/zarish-his/internal/models"
-	"github.com/zarishsphere/zarish-his/internal/repository"
+	"github.com/code-and-brain/zarish-his-1/backend/internal/models"
+	"github.com/code-and-brain/zarish-his-1/backend/internal/repository"
 )
 
 type PatientService struct {
