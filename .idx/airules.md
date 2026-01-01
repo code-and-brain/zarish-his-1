@@ -1671,4 +1671,4 @@ jobs:
 *This document is maintained by the Zarish Sphere Team*  
 *Last Updated: 01 January 2026*  
 *Version: 1.0.0*  
-*Technology Stack: Go 1.22, Gin, GORM, PostgreSQL 16*
+*Technology Stack: Go 1.23, Gin, GORM, PostgreSQL 16*
