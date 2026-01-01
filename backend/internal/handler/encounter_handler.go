@@ -5,8 +5,8 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
-	"github.com/zarishsphere/zarish-his/internal/models"
-	"github.com/zarishsphere/zarish-his/internal/service"
+	"zarish-his/backend/internal/models"
+	"zarish-his/backend/internal/service"
 )
 
 type EncounterHandler struct {

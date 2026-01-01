@@ -6,10 +6,10 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
-	"github.com/zarishsphere/zarish-his/internal/handler"
-	"github.com/zarishsphere/zarish-his/internal/models"
-	"github.com/zarishsphere/zarish-his/internal/repository"
-	"github.com/zarishsphere/zarish-his/internal/service"
+	"github.com/code-and-brain/zarish-his-1/backend/internal/handler"
+	"github.com/code-and-brain/zarish-his-1/backend/internal/models"
+	"github.com/code-and-brain/zarish-his-1/backend/internal/repository"
+	"github.com/code-and-brain/zarish-his-1/backend/internal/service"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -272,8 +272,8 @@ func main() {
 		api.GET("/pharmacy/stock/low", pharmacyHandler.GetLowStock)
 		api.POST("/pharmacy/dispense", pharmacyHandler.DispenseMedication)
 		api.GET("/pharmacy/dispensing-queue", pharmacyHandler.GetDispensingQueue)
-		api.GET("/pharmacy/history/:patient_id", pharmacyHandler.GetPatientHistory)
-		api.GET("/pharmacy/movements/:medication_id", pharmacyHandler.GetStockMovements)
+		api.GET("/:patient_id/history", pharmacyHandler.GetPatientHistory)
+		api.GET("/movements/:medication_id", pharmacyHandler.GetStockMovements)
 
 		// Portal Routes
 		portal := api.Group("/portal")
