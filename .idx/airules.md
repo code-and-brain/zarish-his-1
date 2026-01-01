@@ -368,7 +368,7 @@ A-2: Demographic Info
 ## 1. TECHNOLOGY STACK
 
 ### Core Framework
-- **Language:** Go 1.22+
+- **Language:** Go 1.23+
 - **Framework:** Gin v1.9.1
 - **ORM:** GORM v1.25.7 (PostgreSQL driver)
 - **Database:** PostgreSQL 16+
