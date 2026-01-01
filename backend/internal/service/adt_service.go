@@ -4,8 +4,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/ZarishSphere-Platform/zarish-his/internal/models"
-	"github.com/ZarishSphere-Platform/zarish-his/internal/repository"
+	"github.com/code-and-brain/zarish-his-1/backend/internal/models"
+	"github.com/code-and-brain/zarish-his-1/backend/internal/repository"
 )
 
 type ADTService struct {

@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/zarishsphere/zarish-his/internal/models"
+	"github.com/code-and-brain/zarish-his-1/backend/internal/models"
 	"gorm.io/gorm"
 )
 
