@@ -1,6 +1,6 @@
-module github.com/code-and-brain/zarish-his-1/backend
+module zarish-his/backend
 
-go 1.23.0
+go 1.22
 
 require (
 	"github.com/gin-gonic/gin" v1.9.1
