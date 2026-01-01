@@ -3,7 +3,7 @@ package service
 import (
 	"strings"
 
-	"github.com/zarishsphere/zarish-his/internal/models"
+	"github.com/ZarishSphere-Platform/zarish-his/internal/models"
 )
 
 type CDSService struct{}
